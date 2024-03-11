@@ -1,0 +1,23 @@
+.default-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: min-content;
+    padding: 10px 10px;
+    border-radius: 1.5rem;
+    background-color: lightblue;
+    font-weight: 600;
+    display: flex;
+  }
+  
+  .default-input input {
+    overflow: hidden;
+    
+    color: rgba(0, 0, 0, 0.586);
+    font-size: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+  }
+

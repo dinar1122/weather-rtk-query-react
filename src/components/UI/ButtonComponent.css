@@ -1,0 +1,22 @@
+.default-button {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    background-color: lightblue;
+    color: rgba(0, 0, 0, 0.586);
+    font-weight: 600;
+    display: flex;
+    border: none;
+    transition: background-color 0.3s; 
+    cursor: pointer;
+  }
+  
+  .default-button:hover {
+    background-color: skyblue;
+  }
+  
+  .default-button:active {
+    background-color: dodgerblue;
+  }

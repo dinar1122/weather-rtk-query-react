@@ -1,0 +1,47 @@
+.switch-container {
+    display: flex;
+    background-color: lightblue;
+    width: max-content;
+    padding: 0px;
+    border-radius: 2rem;
+
+  }
+  .switch-container label {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+  
+  .custom-radio {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  input[type="radio"]:checked + .custom-radio {
+    background-color: rgba(75,192,192,1);
+  }
+  
+  input[type="radio"]:checked + .custom-radio:after {
+    content: '';
+    position: absolute;
+    top: 31%;
+    left:  30%;
+    width:  40%;
+    height:  40%;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .label-value {
+    color: rgba(0, 0, 0, 0.586);
+    font-weight: 600;
+  }

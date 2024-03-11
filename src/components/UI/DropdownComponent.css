@@ -1,0 +1,78 @@
+.dropdown-container {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    background-color: lightblue;
+    border-radius: 1.5rem;
+    padding: 0 5px;
+  }
+  
+  .dropdown-selected {
+    padding:0 0 5px 0;
+    height: min-content;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.586);
+    cursor: pointer;
+  }
+  
+  .dropdown-list {
+    
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .custom-radio {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(220, 237, 245);
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .label-value {
+    color: rgba(0, 0, 0, 0.586);
+    font-weight: 600;
+  }
+  
+  .dropdown-item:hover .custom-radio {
+    background-color: rgba(75, 192, 192, 1);
+  }
+  
+  .dropdown-item:hover .custom-radio:after {
+    content: '';
+    position: absolute;
+    top: 31%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255)
+  }
+  
+  .dropdown-item:hover {
+    background-color: rgba(75, 192, 192, 0.1);
+  }
+  
+  .dropdown-container:hover .dropdown-list {
+    border: rgba(39, 106, 106, 0.1) 2px solid;
+    display: block;
+    background-color: lightblue;
+    border-radius: 1rem;
+  }
